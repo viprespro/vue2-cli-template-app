@@ -56,3 +56,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
   Vue.use(Button);
 ```
+
+
+### 项目规范参考
+
+1. # project-name
+2. ## 项目规范
+3. ### 组件 
+4. ### 文件目录规范
+5. ### 开发环境配置
+6. ### 其他
