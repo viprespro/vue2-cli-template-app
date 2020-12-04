@@ -1,0 +1,7 @@
+@function calc($val) {
+  @return $val/ 1080
+}
+
+.logo {
+  width: calc(180rem);
+}

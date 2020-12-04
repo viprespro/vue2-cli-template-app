@@ -23,4 +23,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.wrap {
+  .css-to-rem {
+    width: 100vm;
+  }
+}
 </style>

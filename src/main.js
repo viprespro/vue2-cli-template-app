@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import VConsole from "vconsole/dist/vconsole.min.js";
 import "vant/lib/index.css";
+import "@/utils/flexible";
 
 new VConsole();
 
