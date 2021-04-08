@@ -1,12 +1,9 @@
-/**
- * 用户登录相关
- */
-import { request } from "@/utils/client";
+import { request } from '@/utils/client'
 
-export const login = data => {
+export const doLogin = (data) => {
   return request({
     data,
-    method: "POST",
-    url: "/v1/pub/login"
-  });
-};
+    method: 'POST',
+    url: '/v1/pub/login',
+  })
+}

@@ -1,36 +1,32 @@
-/**
- * 表单验证类
- */
 /* eslint-disable no-unused-vars */
-const isEmpty = str => {
+const isEmpty = (str) => {
   if (!str) {
-    return false;
+    return false
   }
-  return true;
-};
+  return true
+}
 
-const isPhone = num => {
+const isPhone = (num) => {
   if (!/1\d{10}/.test(num)) {
-    return false;
+    return false
   }
-  return true;
-};
+  return true
+}
 
 /**
- *
  * @param {*} str
  * @description 过滤特殊字符串
  */
-const filterSpec = str => {
+const filterSpec = (str) => {
   // eslint-disable-next-line no-invalid-regexp
   const reg = new RegExp(
     "[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥&*（）&；-|{}【】;？，]"
-  );
-  let ret = "";
+  )
+  let ret = ''
   for (let i = 0; i < str.length; i++) {
-    ret = ret + str.substr(i, 1).replace(reg, "");
+    ret = ret + str.substr(i, 1).replace(reg, '')
   }
-  return ret;
-};
+  return ret
+}
 
-export { filterSpec };
+export { filterSpec }
