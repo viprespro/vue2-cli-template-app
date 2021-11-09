@@ -1,5 +1,5 @@
 <template>
-  <div class="home">123</div>
+  <div class="home" style="color: pink;">This is home page.</div>
 </template>
 
 <script>
@@ -12,18 +12,21 @@ export default {
     HelloWorld,
   },
   mounted() {
-    const data = {
-      phone: '18253137881',
-      password: '123456',
-    }
-    doLogin(data).then((res) => {
-      this.$toast('登录成功')
-    })
+    // const data = {
+    //   phone: '18253137881',
+    //   password: '123456',
+    // }
+    // doLogin(data).then((res) => {
+    //   this.$toast('登录成功')
+    // })
+    console.log('---Mounted---')
+    this.$router.push({ path: '/about' })
+    setTimeout(() => console.log(this.$route), 0)
+    console.log(window.location.href)
   },
 }
 </script>
 
-//
 <style lang="scss" scoped>
 .demo-box {
   background: #f0f0f0;

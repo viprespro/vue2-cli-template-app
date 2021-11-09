@@ -4,4 +4,9 @@
   </div>
 </template>
 
-<style></style>
+<style scoped>
+#app {
+  color: pink;
+  font-size: 16px;
+}
+</style>
